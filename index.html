@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Facebook Opengraph -->
+<meta property="og:url" content="https://remanovictor.com"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content=" Design System of remanovictor.com"/>
+<meta property="og:description" content="I am a Frontend Developer and Web Designer"/>
+
+<meta property="og:image" content="/favicon/textures/icon.png"/>
+<meta property="og:image:alt" content="Portfolio website of Remano Victor"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+
+    <link href="stylesheet/prism.css" rel="stylesheet"/>
+    <link href="stylesheet/style.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheet/hamburgers.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="/favicon/favicon.ico">
+
+    <title>Design System - Remano Victor</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="[ grid_columns ]" id="navigation">
+
+            <nav class="[ page-nav ] [ main-nav ]">
+                <ul class="[ page-nav-ul ]">
+                    <li><a href="#Texture"> Textures</a></li>
+                    <li><a href="#Text"> Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours"> Colour Schemes</a></li>
+                </ul>
+            </nav>
+
+            <nav class="[ page-nav ] [ ham-nav ]">
+                <button class="[ hamburger ][ hamburger--3dx ]" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <ul class="[ dropContent ] [ is-active ]" style="display: none;">
+                    <li><a href="#Texture">Textures</a></li>
+                    <li><a href="#Text">Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours">Colour Schemes</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <h1 class="[ pageTitle ]">Design System</h1>
+
+        <div class="[ grid_columns ] [ sections ]" id="Texture">
+
+            <section>
+
+                <h2 class="[ title ]"> Textures:</h2>
+
+                <figure class="[ ds-square-background-color ]" role="img" aria-labelledby="green-square"
+                    alt="cross & cube background texture">
+                </figure>
+
+
+                <figcaption class="[ ds-descr-txt ]">
+
+                    <p>The above figure displays an example of a texture that can be used as a background on a website.
+                    The texture is in svg format which allows for endless scaling without compromising on quality.
+                    The figure is comprised of a square in the centre of 4 other squares. The figure plays on the
+                    Ges talt principle of closure.</p>
+
+                    
+                </figcaption>
+            </section>
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+
+.ds-square-background-color{
+
+    background-color:rgba(00, 00,00, 0.8);
+    background: 
+    url('/textures/background-texture.svg'), 
+    center top repeat;
+
+}
+
+                </code>
+                </pre>
+            </section>
+        </div>
+
+
+        <div class="[ grid_columns ] [ sections ]" id="Text">
+
+
+
+            <section>
+                <h2 class="[ title ]"> Typography:</h2>
+                <h1 class="[ ds-primary-title ]" aria-labelledby="Website title"> I am the main heading (h1) </h1>
+                <u>
+                    <h2 class="[ ds-secondary-title ]" aria-labelledby="Page title"> I am a sub-heading (h2) </h2>
+                </u>
+                <h3 class="[ ds-terciary-title ]" aria-labelledby="Paragraph title"> I am a paragraph title (h3)</h3>
+                <p> I am just a plain 'ol paragraph. (p)</p>
+
+
+                <p class="[ ds-descr-txt ]">The main page title is displayed in a thin font named Raleway.
+                    The font is san-serif which contributes to readability regardles off the font weight.
+                </p>
+            </section>
+
+            <section>
+
+                <pre><code class="language-css">
+
+    .ds-primary-title{
+        font-family: 'de valencia', sans-serif;
+        font-size: 2.5em;
+    }
+    
+    .ds-secondary-title{
+        margin: 10px 0;
+        font-size: 2em;
+    }
+    
+    .ds-terciary-title{
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+                        
+
+                </code>
+                </pre>
+            </section>
+
+
+
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]" id="Links">
+            <section>
+                <h2 class="[ title ]"> Navigation and Links: </h2>
+                <div class="[ grid_columns ]">
+                    <section>
+                        <nav class="[ ds-nav ]" aria-label=" main navigation">
+                            <ul class="[ ds-nav-list ]" aria-label="main navigation list items">
+                                <li>menu item1</li>
+                                <li><a href="#"> menu item2</a></li>
+                                <li>menu item3</li>
+                            </ul>
+                        </nav>
+
+
+                        <nav class="[ ds-nav ]">
+
+                            <button class="[ hamburger ][ hamburger--3dx ]" id="hammy" type="button" aria-label="Hamburger menu">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+
+
+                        </nav>
+                    </section>
+                </div>
+
+                <p class="[ ds-descr-txt ]"> The nav displays an elegant design that has a good contrast.
+                    On hover, the links change to a orangered color which still stands out against the dark background
+                    providing good visibility.</p>
+            </section>
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+
+    .ds-nav{
+        background-color:#262626;
+        margin-bottom: 15px;
+        width: 400px;
+        padding: 10px;
+    }
+    
+    
+    .ds-nav-list li {
+        display: inline;
+        margin: 0;
+        color: #989215;
+        margin-right: 20px;
+    }
+    
+    .ds-nav-list li a:hover{
+        color: orangered;
+    }
+    
+    .ds-nav-list li a:active{
+        color: #F2ECD5;
+    }
+    
+    .hamburger-inner, 
+     .hamburger-inner::before,
+      .hamburger-inner::after{
+        background-color: #989215 !important;
+        margin-left: 0;
+        padding-left: 0;
+    }
+                        
+                        
+                </code>
+                </pre>
+            </section>
+
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]" id="Buttons">
+
+            <section>
+                <h2 class="[ title ]"> Buttons: </h2>
+
+                <button class="[ ds-btn-pr ]" aria-label="button"> Click Me </button>
+                </br>
+                </br>
+
+                <p class="[ ds-descr-txt ]"> The Buttons are simple in design.
+                    The corners are slightly rounded to give a less sharp or hostile feel.
+                </p>
+            </section>
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+
+    .ds-btn-pr{
+        padding: 10px;
+        width: 50%;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color:#262626;
+        color: #989215;
+        margin-top: 10px;
+    }
+    
+    .ds-btn-pr:hover{
+        color: orangered;
+        box-shadow: 0px 2px 10px rgba(0,0,0, 0.7);
+    }
+    
+    .ds-btn-pr:active{
+        color: #F2ECD5;
+    }
+                                  
+                </code>
+                </pre>
+            </section>
+
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]" id="Form">
+
+            <section>
+                <h2 class="[ title ]"> Form Field: </h2>
+                <form class="[ ds-form ]" aria-label="form">
+                    <span>Name:</span>
+                    <br>
+                    <input type="text" class="[ ds-nameInput ]" aria-label="name input"> </br></br>
+                    <span>Email:</span>
+                    <br>
+                    <input type="email" class="[ ds-mailInput ]" aria-label="email input"></br></br>
+                    <span>Number:</span>
+                    <br>
+                    <input type="number" class="[ ds-numberInput ]" aria-label="number input"> </br></br>
+                    <span>Enter Your Comment:</span></br></br>
+                    <textarea></textarea>
+                </form>
+                <button class="[ ds-btn-pr ]" aria-label="submit button"> Click Me </button>
+
+                <p class="[ ds-descr-txt ]"> The form has a dark background with a light text making visibility and
+                    readability not issue at all. </p>
+            </section>
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+    
+    .ds-form{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        width: 500px;
+        color: #F2ECD5;
+        border-radius: 5px;
+        margin-top: 200px;
+    }
+    
+    input{
+        width: 50%;
+        margin: 10px 0;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #F2ECD5;
+        padding: 5px;
+        color: #F2ECD5;
+        font-size: 1.1em;
+    }
+    
+    textarea{
+        width: 400px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #F2ECD5;
+        padding: 5px;
+        color: #F2ECD5;
+        font-size: 1.1em;
+        
+    }                        
+
+                </code>
+                </pre>
+            </section>
+        </div>
+
+
+        <div class="[ grid_columns ] [ sections ]" id="Logo">
+
+            <section>
+                <h2 class="[ title ]"> Logo: </h2>
+
+                
+                <img data-src="/textures/logo2-500.png" srcset=" textures/icon.png 500w,textures/logo2-500.png 700w,textures/logo1-1000.png 1000w," alt="main website logo">                                             
+
+                
+
+                <figcaption class="[ ds-descr-txt ]">
+                    <p> The logo is placed on a dark background. It is my name and surname as well as what I do for a
+                        living.
+                        The logo displays a feeling of professionalism but keeps an aspect of fun with the " i " as an
+                        accent colour.
+                    </p>
+                </figcaption>
+
+            </section>
+
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+
+
+    .ds-logo{
+        height: 50vh;
+        width: 500px;
+        
+        background-image:
+        url('/textures/Untitled-2.svg');
+        background-repeat: no-repeat;
+    
+    }
+
+            </code>
+            </pre>
+            </section>
+
+
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]" id="Colours">
+            <section>
+                <h2 class="[ title ]" aria-label="colour scheme"> Colour Scheme </h2>
+
+                <p> The page uses 3 colours as main colours. namely:
+                </p>
+                <br>
+                <br>
+                <p> #989215 </p>
+                <br>
+                <div class="gold"></div>
+                <p> This colour is used mainly for links </p>
+                <br>
+                <br>
+                <p> #262626 </p>
+                <br>
+                <div class="black"></div>
+                <p> This colour is used for the main body background colour as well as for the nav</p>
+                <br>
+                <br>
+                <p> #F2ECD5 </p>
+                <br>
+                <div class="cream"></div>
+                <p> This can be used as a sectional seperator background within the page</p>
+
+
+
+                <p class="[ ds-descr-txt ]"> The colours compliment each other by blending and stil having a contrast
+                    ratio of 4.7:1
+                    if placing gold on black. the ratio is poor when placing gold on the the cream however. </p>
+            </section>
+
+            <section>
+
+                <pre><code class="[ language-css ]">
+    
+    
+    .gold{
+        background-color: #989215;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    
+    .black{
+        background-color: #262626;
+        height: 50px;
+        width: 50px;
+        border-radius:5px;
+    }
+    
+    .cream{
+        background-color: #F2ECD5;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }  
+    
+                </code>
+                </pre>
+            </section>
+
+        </div>
+
+
+        <div class="[ grid_columns ] [ sections ]">
+
+            <section class="[ keanuSaves ]">
+                
+                <img class="[ lazy ]" loading="lazy" data-src="keanuSaves/Untitled-4-Recovered.png" alt="image of keanu reeves" srcset="keanuSaves/Untitled-4-Recovered@0,75x.png 1000w,
+                keanuSaves/Untitled-4-Recovered@0,25x.png 500w">            
+
+            </section>
+
+            <section>
+    
+                    <pre><code class="[ language-html ]">
+        
+                        
+                            <img class="[ lazy ]" loading="lazy" data-src="keanuSaves/Untitled-4-Recovered.png" alt="image of keanu reeves" srcset="keanuSaves/Untitled-4-Recovered@0,25x.png 1000w,
+                                    keanuSaves/Untitled-4-Recovered@0,25x.png 500w">                            
+        
+                    </code>
+                    </pre>
+                </section>
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]">
+            <section class="[ skatergirl ]">
+
+                <img class="[ lazy ]" loading="lazy" data-src="skatergirl/Artboard_1.png" class="[ lazy ]" alt="young girl on a skateboard" srcset="skatergirl/Artboard_1@0,5x.png 1000w,
+                                skatergirl/Artboard_1@0,25x.png 500w">
+            </section>
+
+            <section>
+    
+                    <pre><code class="[ language-html ]">
+        
+                            <img class="[ lazy ]" loading="lazy" data-src="skatergirl/Artboard_1.png" class="[ lazy ]" alt="young girl on a skateboard" srcset="skatergirl/Artboard_1@0,5x.png 1000w,
+                                    skatergirl/Artboard_1@0,25x.png 500w">
+        
+        
+                    </code>
+                    </pre>
+                </section>
+        </div>
+
+        <div class="[ grid_columns ] [ sections ]">
+        
+            <section>
+                <div class="[ grid_columns ]">
+                    <section>
+                    <img class="[ lazy ]" loading="lazy" data-src="tattoo/Artboard_1-2@0,5x.png" class="[ lazy ]" alt="image of a small ghost tattoo" srcset="tattoo/Artboard_1-2@0,75x.png 1000w,
+                tattoo/Artboard_1-2@0,25x.png 500w">
+            </section>
+
+            <section>
+
+                <img class="[ lazy ]" loading="lazy" data-src="tattoo/Artboard_1@0,5x.png" class="[ lazy ]" alt="image of small ghost tattoo removal" srcset="tattoo/Artboard_1@0,75x.png 1000w,
+                                                                                                        tattoo/Artboard_1@0,25x.png 500w"> 
+            </section>   
+            </div>
+            </section>
+            
+
+            <section>
+    
+                    <pre><code class="[ language-html ]">
+
+        
+                    </code>
+                    </pre>
+                </section>
+        </div>
+
+
+
+
+        <div class="[ grid_columns ] [  sections ]">
+            <section>
+
+
+
+            </section>
+        </div>
+
+
+        </article>
+    </main>
+    <script src="scripts/prism.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
