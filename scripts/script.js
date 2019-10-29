@@ -1,3 +1,6 @@
+
+//main mobile nav
+
 let hamburger = document.querySelector(".hamburger");
 let content = document.querySelector(".dropContent");
 
@@ -25,23 +28,23 @@ mobileNav.addEventListener("click", function() {
   });
 
 
-// lazy loading
+  //lazy loading
 
-if ('loading' in HTMLImageElement.prototype) {
-  //Native Lazy Loading Supported!
-
-  console.log('yay!')
-
-  const images = document.querySelectorAll('img[loading="lazy"]')
-  images.forEach(img => {
-      img.src = img.dataset.src;
-  })
-} else {
-  // Not supported!
-
-  console.log('boo!')
-
-  const script = document.createElement('script')
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js';
-  document.body.appendChild(script);
-}
+  if ('loading' in HTMLImageElement.prototype) {
+    //Native Lazy Loading Supported!
+  
+    console.log('success');
+  
+    const images = document.querySelectorAll('img[loading="lazy"]')
+    images.forEach(img => {
+        img.src = img.dataset.src;
+    })
+  } else {
+    // Not supported!
+  
+    console.log('boo!')
+  
+    const script = document.createElement('script')
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js';
+    document.body.appendChild(script);
+  }

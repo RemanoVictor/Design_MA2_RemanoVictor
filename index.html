@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Facebook Opengraph -->
-<meta property="og:url" content="https://remanovictor.com"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content=" Design System of remanovictor.com"/>
-<meta property="og:description" content="I am a Frontend Developer and Web Designer"/>
+    <meta property="og:url" content="https://remanovictor.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=" Design System of remanovictor.com"/>
+    <meta property="og:description" content="I am a Frontend Developer and Web Designer"/>
 
-<meta property="og:image" content="/favicon/textures/icon.png"/>
-<meta property="og:image:alt" content="Portfolio website of Remano Victor"/>
-<meta property="og:image:type" content="image/png"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
+    <meta property="og:image" content="/favicon/icon.png"/>
+    <meta property="og:image:alt" content="Portfolio website of Remano Victor"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
 
     <link href="stylesheet/prism.css" rel="stylesheet"/>
-    <link href="stylesheet/style.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheet/style.css" type="text/css" rel="stylesheet"/>
     <link href="stylesheet/hamburgers.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="/favicon/favicon.ico">
 
@@ -41,6 +41,7 @@
                     <li><a href="#Form">Form Fields</a></li>
                     <li><a href="#Logo">Logo</a></li>
                     <li><a href="#Colours"> Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
                 </ul>
             </nav>
 
@@ -59,6 +60,7 @@
                     <li><a href="#Form">Form Fields</a></li>
                     <li><a href="#Logo">Logo</a></li>
                     <li><a href="#Colours">Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
                 </ul>
             </nav>
 
@@ -66,7 +68,7 @@
     </header>
 
     <main>
-        <h1 class="[ pageTitle ]">Design System</h1>
+        <h1 class="[ pageTitle ]">Design System of remanovictor.com</h1>
 
         <div class="[ grid_columns ] [ sections ]" id="Texture">
 
@@ -94,14 +96,9 @@
 
                 <pre><code class="[ language-css ]">
 
-.ds-square-background-color{
-
-    background-color:rgba(00, 00,00, 0.8);
-    background: 
-    url('/textures/background-texture.svg'), 
-    center top repeat;
-
-}
+background: 
+url('/textures/background-texture.svg'),  center top repeat;
+background-color: rgba(00, 00, 00,1);
 
                 </code>
                 </pre>
@@ -193,7 +190,7 @@
                 <pre><code class="[ language-css ]">
 
     .ds-nav{
-        background-color:#262626;
+        background-color:#000;
         margin-bottom: 15px;
         width: 400px;
         padding: 10px;
@@ -203,7 +200,7 @@
     .ds-nav-list li {
         display: inline;
         margin: 0;
-        color: #989215;
+        color: rgba(255, 255, 255, 0.7);
         margin-right: 20px;
     }
     
@@ -216,12 +213,14 @@
     }
     
     .hamburger-inner, 
-     .hamburger-inner::before,
-      .hamburger-inner::after{
-        background-color: #989215 !important;
-        margin-left: 0;
-        padding-left: 0;
-    }
+        .hamburger-inner::before, 
+            .hamburger-inner::after{
+                background-color: #fff !important;
+                margin-left: 0;
+                padding-left: 0;
+                padding-left: 0;
+            }
+               
                         
                         
                 </code>
@@ -255,7 +254,7 @@
         font-size: 1.1em;
         font-weight: bold;
         background-color:#262626;
-        color: #989215;
+        color: #fff;
         margin-top: 10px;
     }
     
@@ -302,9 +301,8 @@
                 <pre><code class="[ language-css ]">
     
     .ds-form{
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
         padding: 20px;
-        width: 500px;
         color: #F2ECD5;
         border-radius: 5px;
         margin-top: 200px;
@@ -365,11 +363,10 @@
 
 
     .ds-logo{
-        height: 50vh;
+        height: 60vh;
         width: 500px;
         
-        background-image:
-        url('/textures/Untitled-2.svg');
+        background-image: url('/textures/icon1.png');
         background-repeat: no-repeat;
     
     }
@@ -389,24 +386,22 @@
                 </p>
                 <br>
                 <br>
-                <p> #989215 </p>
+                <p> gba(255, 255, 255, 0.7) </p>
                 <br>
-                <div class="gold"></div>
+                <div class="[ white ]"></div>
                 <p> This colour is used mainly for links </p>
                 <br>
                 <br>
-                <p> #262626 </p>
+                <p> rgb(000,000,000) </p>
                 <br>
-                <div class="black"></div>
+                <div class="[ black ]"></div>
                 <p> This colour is used for the main body background colour as well as for the nav</p>
                 <br>
                 <br>
-                <p> #F2ECD5 </p>
+                <p> rgb(233, 233, 233)</p>
                 <br>
-                <div class="cream"></div>
+                <div class="[ cream ]"></div>
                 <p> This can be used as a sectional seperator background within the page</p>
-
-
 
                 <p class="[ ds-descr-txt ]"> The colours compliment each other by blending and stil having a contrast
                     ratio of 4.7:1
@@ -418,27 +413,27 @@
                 <pre><code class="[ language-css ]">
     
     
-    .gold{
-        background-color: #989215;
+    .white{
+        background-color: rgba(255, 255, 255, 0.7);
         height: 50px;
         width: 50px;
         border-radius: 5px;
     }
     
     .black{
-        background-color: #262626;
+        background-color: #000;
         height: 50px;
         width: 50px;
         border-radius:5px;
     }
     
     .cream{
-        background-color: #F2ECD5;
+        background-color: rgb(233, 233, 233);
         height: 50px;
         width: 50px;
         border-radius: 5px;
         border: 1px solid black;
-    }  
+    }
     
                 </code>
                 </pre>
@@ -446,90 +441,8 @@
 
         </div>
 
-
-        <div class="[ grid_columns ] [ sections ]">
-
-            <section class="[ keanuSaves ]">
-                
-                <img class="[ lazy ]" loading="lazy" data-src="keanuSaves/Untitled-4-Recovered.png" alt="image of keanu reeves" srcset="keanuSaves/Untitled-4-Recovered@0,75x.png 1000w,
-                keanuSaves/Untitled-4-Recovered@0,25x.png 500w">            
-
-            </section>
-
-            <section>
-    
-                    <pre><code class="[ language-html ]">
-        
-                        
-                            <img class="[ lazy ]" loading="lazy" data-src="keanuSaves/Untitled-4-Recovered.png" alt="image of keanu reeves" srcset="keanuSaves/Untitled-4-Recovered@0,25x.png 1000w,
-                                    keanuSaves/Untitled-4-Recovered@0,25x.png 500w">                            
-        
-                    </code>
-                    </pre>
-                </section>
-        </div>
-
-        <div class="[ grid_columns ] [ sections ]">
-            <section class="[ skatergirl ]">
-
-                <img class="[ lazy ]" loading="lazy" data-src="skatergirl/Artboard_1.png" class="[ lazy ]" alt="young girl on a skateboard" srcset="skatergirl/Artboard_1@0,5x.png 1000w,
-                                skatergirl/Artboard_1@0,25x.png 500w">
-            </section>
-
-            <section>
-    
-                    <pre><code class="[ language-html ]">
-        
-                            <img class="[ lazy ]" loading="lazy" data-src="skatergirl/Artboard_1.png" class="[ lazy ]" alt="young girl on a skateboard" srcset="skatergirl/Artboard_1@0,5x.png 1000w,
-                                    skatergirl/Artboard_1@0,25x.png 500w">
-        
-        
-                    </code>
-                    </pre>
-                </section>
-        </div>
-
-        <div class="[ grid_columns ] [ sections ]">
-        
-            <section>
-                <div class="[ grid_columns ]">
-                    <section>
-                    <img class="[ lazy ]" loading="lazy" data-src="tattoo/Artboard_1-2@0,5x.png" class="[ lazy ]" alt="image of a small ghost tattoo" srcset="tattoo/Artboard_1-2@0,75x.png 1000w,
-                tattoo/Artboard_1-2@0,25x.png 500w">
-            </section>
-
-            <section>
-
-                <img class="[ lazy ]" loading="lazy" data-src="tattoo/Artboard_1@0,5x.png" class="[ lazy ]" alt="image of small ghost tattoo removal" srcset="tattoo/Artboard_1@0,75x.png 1000w,
-                                                                                                        tattoo/Artboard_1@0,25x.png 500w"> 
-            </section>   
-            </div>
-            </section>
-            
-
-            <section>
-    
-                    <pre><code class="[ language-html ]">
-
-        
-                    </code>
-                    </pre>
-                </section>
-        </div>
-
-
-
-
-        <div class="[ grid_columns ] [  sections ]">
-            <section>
-
-
-
-            </section>
-        </div>
-
-
         </article>
+
     </main>
     <script src="scripts/prism.js"></script>
     <script src="scripts/script.js"></script>
